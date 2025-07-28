@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>阎浮世界 - 工业空岛</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <style>
+    .transition-hover {
+      transition: all 0.3s ease-in-out;
+    }
+    .transition-hover:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body class="bg-gray-950 text-gray-100 font-sans">
+  <!-- Header -->
+  <header class="bg-gray-900/80 backdrop-blur shadow sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-extrabold tracking-tight text-white">阎浮世界</h1>
+      <nav class="space-x-6 text-gray-300 font-medium flex items-center">
+        <a href="#" class="hover:text-indigo-400 transition-colors flex items-center gap-1"><i class="fas fa-home"></i> 首页</a>
+        <a href="#download" class="hover:text-indigo-400 transition-colors flex items-center gap-1"><i class="fas fa-download"></i> 客户端下载</a>
+        <a href="#feedback" class="hover:text-indigo-400 transition-colors flex items-center gap-1"><i class="fas fa-bug"></i> Bug反馈</a>
+        <a href="#qq" class="hover:text-indigo-400 transition-colors flex items-center gap-1"><i class="fab fa-qq"></i> 加入QQ群</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-indigo-700 via-purple-700 to-pink-700 text-white py-24">
+    <div class="max-w-4xl mx-auto text-center px-4">
+      <h2 class="text-5xl font-extrabold mb-4 drop-shadow">工业空岛</h2>
+      <p class="text-xl mb-6">版本：Minecraft 1.20.1</p>
+      <p class="mb-8 text-gray-100">服务器IP暂未开放，敬请期待</p>
+      <div class="space-x-6">
+        <a href="#download" class="bg-white/90 text-indigo-700 px-6 py-3 rounded-xl font-semibold transition-hover">客户端下载</a>
+        <a href="#qq" class="bg-white/90 text-pink-700 px-6 py-3 rounded-xl font-semibold transition-hover">加入QQ群</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Screenshot Section -->
+  <section class="py-20 bg-gray-900">
+    <div class="max-w-6xl mx-auto px-6">
+      <h3 class="text-3xl font-bold mb-8 text-white">截图展示</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div class="bg-gray-700 h-52 rounded-xl flex items-center justify-center text-gray-300 text-lg transition-hover">占位图1</div>
+        <div class="bg-gray-700 h-52 rounded-xl flex items-center justify-center text-gray-300 text-lg transition-hover">占位图2</div>
+        <div class="bg-gray-700 h-52 rounded-xl flex items-center justify-center text-gray-300 text-lg transition-hover">占位图3</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video Showcase -->
+  <section class="py-20 bg-gray-950">
+    <div class="max-w-7xl mx-auto px-6">
+      <h3 class="text-3xl font-bold mb-6 text-white">视频展示</h3>
+      <div class="flex flex-col md:flex-row gap-8">
+        <!-- Video Preview Left -->
+        <div class="md:w-1/3 bg-gray-800 rounded-lg p-4 text-gray-200">
+          <h4 class="text-xl font-semibold mb-2">视频预览</h4>
+          <div id="videoDisplay" class="aspect-video bg-gray-700 flex items-center justify-center text-gray-400">悬停视频左侧预览</div>
+        </div>
+        <!-- Video Grid -->
+        <div class="md:w-2/3 grid grid-cols-3 grid-rows-2 gap-4">
+          <div class="bg-gray-700 aspect-video rounded-lg flex items-center justify-center text-gray-300 cursor-pointer transition-hover" onmouseover="document.getElementById('videoDisplay').innerText='视频 1 预览'">视频1</div>
+          <div class="bg-gray-700 aspect-video rounded-lg flex items-center justify-center text-gray-300 cursor-pointer transition-hover" onmouseover="document.getElementById('videoDisplay').innerText='视频 2 预览'">视频2</div>
+          <div class="bg-gray-700 aspect-video rounded-lg flex items-center justify-center text-gray-300 cursor-pointer transition-hover" onmouseover="document.getElementById('videoDisplay').innerText='视频 3 预览'">视频3</div>
+          <div class="bg-gray-700 aspect-video rounded-lg flex items-center justify-center text-gray-300 cursor-pointer transition-hover" onmouseover="document.getElementById('videoDisplay').innerText='视频 4 预览'">视频4</div>
+          <div class="bg-gray-700 aspect-video rounded-lg flex items-center justify-center text-gray-300 cursor-pointer transition-hover" onmouseover="document.getElementById('videoDisplay').innerText='视频 5 预览'">视频5</div>
+          <div class="bg-gray-700 aspect-video rounded-lg flex items-center justify-center text-gray-300 cursor-pointer transition-hover" onmouseover="document.getElementById('videoDisplay').innerText='视频 6 预览'">视频6</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Staff Section -->
+  <section class="py-20 bg-gray-900">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h3 class="text-3xl font-bold mb-8 text-white">STAFF 团队</h3>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6">
+        <div class="flex flex-col items-center gap-2">
+          <img src="https://via.placeholder.com/100" class="rounded-full" />
+          <span>成员A</span>
+        </div>
+        <div class="flex flex-col items-center gap-2">
+          <img src="https://via.placeholder.com/100" class="rounded-full" />
+          <span>成员B</span>
+        </div>
+        <div class="flex flex-col items-center gap-2">
+          <img src="https://via.placeholder.com/100" class="rounded-full" />
+          <span>成员C</span>
+        </div>
+        <div class="flex flex-col items-center gap-2">
+          <img src="https://via.placeholder.com/100" class="rounded-full" />
+          <span>成员D</span>
+        </div>
+        <div class="flex flex-col items-center gap-2">
+          <img src="https://via.placeholder.com/100" class="rounded-full" />
+          <span>成员E</span>
+        </div>
+        <div class="flex flex-col items-center gap-2">
+          <img src="https://via.placeholder.com/100" class="rounded-full" />
+          <span>成员F</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black text-gray-500 text-center py-6">
+    <p class="text-sm">© 阎浮世界 Minecraft Server</p>
+  </footer>
+</body>
+</html>
